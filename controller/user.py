@@ -160,4 +160,6 @@ def delete_employee(emp_id, db):
         db.rollback()
         return {"message": f"Error occurred: {str(e)}"}
                 
-        
+
+def test_user():
+    pass
