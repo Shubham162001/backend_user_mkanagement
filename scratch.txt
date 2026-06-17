@@ -1,0 +1,22 @@
+user_dict= {
+
+    "name": "YASH",
+    "AGE" : 30
+
+}
+query = 'Insert into table employyee (id,name,age,department) values (:id,:name,:age,:department)', 
+
+result = db.execute(text(query),).fetchall()
+
+
+def insert_params(user):
+    dict = {
+    "id" : user.id,
+    "name" : user.name,
+    ;;;;
+    }
+
+    query = 'Insert into table employyee (id,name,age,department) values (:id,:name,:age,:department)', 
+    db.execute(text(query),params = dict)
+    db.commit()
+    return {"msg" : "data inserted sucesfukyy":}
