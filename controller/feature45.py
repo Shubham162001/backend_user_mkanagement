@@ -1,2 +1,2 @@
 def test():
-    return
+    return {"message": "yES Its done!!"}
